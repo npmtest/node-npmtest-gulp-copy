@@ -1,7 +1,10 @@
-# test coverage for  [gulp-copy (v1.0.0)](https://github.com/klaascuvelier/gulp-copy)  [![npm package](https://img.shields.io/npm/v/npmtest-gulp-copy.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-gulp-copy) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-gulp-copy.svg)](https://travis-ci.org/npmtest/node-npmtest-gulp-copy)
+# npmtest-gulp-copy
+
+#### test coverage for  [gulp-copy (v1.0.0)](https://github.com/klaascuvelier/gulp-copy)  [![npm package](https://img.shields.io/npm/v/npmtest-gulp-copy.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-gulp-copy) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-gulp-copy.svg)](https://travis-ci.org/npmtest/node-npmtest-gulp-copy)
+
 #### Plugin copying files to a new destination and using that destination for other actions
 
-[![NPM](https://nodei.co/npm/gulp-copy.png?downloads=true)](https://www.npmjs.com/package/gulp-copy)
+[![NPM](https://nodei.co/npm/gulp-copy.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/gulp-copy)
 
 | git-branch : | [alpha](https://github.com/npmtest/node-npmtest-gulp-copy/tree/alpha)|
 |--:|:--|
@@ -9,11 +12,17 @@
 | test-report : | [![test-report](https://npmtest.github.io/node-npmtest-gulp-copy/build/test-report.badge.svg)](https://npmtest.github.io/node-npmtest-gulp-copy/build/test-report.html)|
 | build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-gulp-copy/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-gulp-copy/tree/gh-pages/build)|
 
-[![istanbul-coverage](https://npmtest.github.io/node-npmtest-gulp-copy/build/screenCapture.buildCustomOrg.browser.coverage.html.png)](https://npmtest.github.io/node-npmtest-gulp-copy/build/coverage.html/index.html)
+- [https://npmtest.github.io/node-npmtest-gulp-copy/build/coverage.html/index.html](https://npmtest.github.io/node-npmtest-gulp-copy/build/coverage.html/index.html)
 
-[![test-report](https://npmtest.github.io/node-npmtest-gulp-copy/build/screenCapture.buildCustomOrg.browser.%252Fhome%252Ftravis%252Fbuild%252Fnpmtest%252Fnode-npmtest-gulp-copy%252Ftmp%252Fbuild%252Ftest-report.html.png)](https://npmtest.github.io/node-npmtest-gulp-copy/build/test-report.html)
+[![istanbul-coverage](https://npmtest.github.io/node-npmtest-gulp-copy/build/screenCapture.buildCi.browser.%252Ftmp%252Fbuild%252Fcoverage.lib.html.png)](https://npmtest.github.io/node-npmtest-gulp-copy/build/coverage.html/index.html)
 
-[![apidoc](https://npmdoc.github.io/node-npmdoc-gulp-copy/build/screenCapture.buildApidoc.browser.%252Fhome%252Ftravis%252Fbuild%252Fnpmdoc%252Fnode-npmdoc-gulp-copy%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-gulp-copy/build/apidoc.html)
+- [https://npmtest.github.io/node-npmtest-gulp-copy/build/test-report.html](https://npmtest.github.io/node-npmtest-gulp-copy/build/test-report.html)
+
+[![test-report](https://npmtest.github.io/node-npmtest-gulp-copy/build/screenCapture.buildCi.browser.%252Ftmp%252Fbuild%252Ftest-report.html.png)](https://npmtest.github.io/node-npmtest-gulp-copy/build/test-report.html)
+
+- [https://npmdoc.github.io/node-npmdoc-gulp-copy/build/apidoc.html](https://npmdoc.github.io/node-npmdoc-gulp-copy/build/apidoc.html)
+
+[![apidoc](https://npmdoc.github.io/node-npmdoc-gulp-copy/build/screenCapture.buildCi.browser.%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-gulp-copy/build/apidoc.html)
 
 ![npmPackageListing](https://npmtest.github.io/node-npmtest-gulp-copy/build/screenCapture.npmPackageListing.svg)
 
@@ -28,7 +37,6 @@
 {
     "author": {
         "name": "Klaas Cuvelier",
-        "email": "cuvelierklaas@gmail.com",
         "url": "http://klaascuvelier.io"
     },
     "bugs": {
@@ -61,13 +69,11 @@
     "main": "index.js",
     "maintainers": [
         {
-            "name": "klaascuvelier",
-            "email": "cuvelierklaas@gmail.com"
+            "name": "klaascuvelier"
         }
     ],
     "name": "gulp-copy",
     "optionalDependencies": {},
-    "readme": "ERROR: No README data found!",
     "repository": {
         "type": "git",
         "url": "git+https://github.com/klaascuvelier/gulp-copy.git"
