@@ -1,7 +1,5 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <title>Code coverage report for node-npmtest-gulp-copy/gulp-copy/lib/gulp-copy.js</title>
+<html lang="en"><head>
+    <title>Code coverage report for node-npmtest-gulp-copy/node_modules/gulp-copy/lib/gulp-copy.js</title>
     <meta charset="utf-8">
     <style>
         body, html {
@@ -194,7 +192,7 @@
     <h1 style="font-weight: bold;">
         <a href="https://github.com/npmtest/node-npmtest-gulp-copy">npmtest-gulp-copy (v0.0.1)</a>
     </h1>
-    <h1>Code coverage report for <span class="entity">node-npmtest-gulp-copy/gulp-copy/lib/gulp-copy.js</span></h1>
+    <h1>Code coverage report for <span class="entity">node-npmtest-gulp-copy/node_modules/gulp-copy/lib/gulp-copy.js</span></h1>
     <h2>
         
         Statements: <span class="metric">17.19% <small>(11 / 64)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
@@ -210,11 +208,11 @@
         
         Ignored: <span class="metric"><span class="ignore-none">none</span></span> &nbsp;&nbsp;&nbsp;&nbsp;
     </h2>
-    <div class="path"><a href="../../../index.html">All files</a> &#187; <a href="index.html">node-npmtest-gulp-copy/gulp-copy/lib/</a> &#187; gulp-copy.js</div>
+    <div class="path"><a href="../../../../index.html">All files</a> » <a href="index.html">node-npmtest-gulp-copy/node_modules/gulp-copy/lib/</a> » gulp-copy.js</div>
 </div>
 <div class="body">
 <pre><table class="coverage">
-<tr><td class="line-count">1
+<tbody><tr><td class="line-count">1
 2
 3
 4
@@ -547,24 +545,24 @@ var PluginError = require('gulp-util').PluginError;
  * @param {object} opts
  * @returns {object}
  */
-<span class="fstat-no" title="function not covered" >function gulpCopy (destination, opts)</span>
+<span class="fstat-no" title="function not covered">function gulpCopy (destination, opts)</span>
 {
-<span class="cstat-no" title="statement not covered" >    var throughOptions = { objectMode: true };</span>
+<span class="cstat-no" title="statement not covered">    var throughOptions = { objectMode: true };</span>
 &nbsp;
     // Make sure a destination was verified
-<span class="cstat-no" title="statement not covered" >    if (typeof destination !== 'string') {</span>
-<span class="cstat-no" title="statement not covered" >        throw new PluginError('gulp-copy', 'No valid destination specified');</span>
+<span class="cstat-no" title="statement not covered">    if (typeof destination !== 'string') {</span>
+<span class="cstat-no" title="statement not covered">        throw new PluginError('gulp-copy', 'No valid destination specified');</span>
     }
 &nbsp;
     // Default options
-<span class="cstat-no" title="statement not covered" >    if (opts === undefined) {</span>
-<span class="cstat-no" title="statement not covered" >        opts = opts || {};</span>
+<span class="cstat-no" title="statement not covered">    if (opts === undefined) {</span>
+<span class="cstat-no" title="statement not covered">        opts = opts || {};</span>
     }
-    else <span class="cstat-no" title="statement not covered" >if (typeof opts !== 'object' || opts === null) {</span>
-<span class="cstat-no" title="statement not covered" >        throw new PluginError('gulp-copy', 'No valid options specified');</span>
+    else <span class="cstat-no" title="statement not covered">if (typeof opts !== 'object' || opts === null) {</span>
+<span class="cstat-no" title="statement not covered">        throw new PluginError('gulp-copy', 'No valid options specified');</span>
     }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >    return through(throughOptions, transform);</span>
+<span class="cstat-no" title="statement not covered">    return through(throughOptions, transform);</span>
 &nbsp;
     /**
      * Transform method, copies the file to its new destination
@@ -572,46 +570,46 @@ var PluginError = require('gulp-util').PluginError;
      * @param {string} encoding
      * @param {function} cb
      */
-<span class="fstat-no" title="function not covered" >    function transform(file, encoding, cb)</span>
+<span class="fstat-no" title="function not covered">    function transform(file, encoding, cb)</span>
     {
-<span class="cstat-no" title="statement not covered" >        var rel = null;</span>
-<span class="cstat-no" title="statement not covered" >        var fileDestination = null;</span>
+<span class="cstat-no" title="statement not covered">        var rel = null;</span>
+<span class="cstat-no" title="statement not covered">        var fileDestination = null;</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered" >        if (file.isStream()) {</span>
-<span class="cstat-no" title="statement not covered" >            return cb(new PluginError('gulp-copy', 'Streaming not supported'));</span>
+<span class="cstat-no" title="statement not covered">        if (file.isStream()) {</span>
+<span class="cstat-no" title="statement not covered">            return cb(new PluginError('gulp-copy', 'Streaming not supported'));</span>
         }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >        if (!file.isNull()) {</span>
-<span class="cstat-no" title="statement not covered" >            rel = path.relative(file.cwd, file.path).replace(/\\/g, '/');</span>
+<span class="cstat-no" title="statement not covered">        if (!file.isNull()) {</span>
+<span class="cstat-no" title="statement not covered">            rel = path.relative(file.cwd, file.path).replace(/\\/g, '/');</span>
 &nbsp;
             // Strip path prefixes
-<span class="cstat-no" title="statement not covered" >            if (opts.prefix) {</span>
-<span class="cstat-no" title="statement not covered" >                var p = opts.prefix;</span>
-<span class="cstat-no" title="statement not covered" >                while (p-- &gt; 0) {</span>
-<span class="cstat-no" title="statement not covered" >                    rel = rel.substring(rel.indexOf('/') + 1);</span>
+<span class="cstat-no" title="statement not covered">            if (opts.prefix) {</span>
+<span class="cstat-no" title="statement not covered">                var p = opts.prefix;</span>
+<span class="cstat-no" title="statement not covered">                while (p-- &gt; 0) {</span>
+<span class="cstat-no" title="statement not covered">                    rel = rel.substring(rel.indexOf('/') + 1);</span>
                 }
             }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >            fileDestination = destination + '/' + rel;</span>
+<span class="cstat-no" title="statement not covered">            fileDestination = destination + '/' + rel;</span>
 &nbsp;
             // Make sure destination exists
-<span class="cstat-no" title="statement not covered" >            if (!doesPathExist(fileDestination)) {</span>
-<span class="cstat-no" title="statement not covered" >                createDestination(fileDestination.substr(0, fileDestination.lastIndexOf('/')));</span>
+<span class="cstat-no" title="statement not covered">            if (!doesPathExist(fileDestination)) {</span>
+<span class="cstat-no" title="statement not covered">                createDestination(fileDestination.substr(0, fileDestination.lastIndexOf('/')));</span>
             }
 &nbsp;
             // Copy the file
-<span class="cstat-no" title="statement not covered" >            copyFile(file.path, fileDestination, <span class="fstat-no" title="function not covered" >function (error) {</span></span>
-<span class="cstat-no" title="statement not covered" >                if (error) {</span>
-<span class="cstat-no" title="statement not covered" >                    throw new PluginError('gulp-copy', 'Could not copy file &lt;' +  file.path + '&gt;: ' + error.message);</span>
+<span class="cstat-no" title="statement not covered">            copyFile(file.path, fileDestination, <span class="fstat-no" title="function not covered">function (error) {</span></span>
+<span class="cstat-no" title="statement not covered">                if (error) {</span>
+<span class="cstat-no" title="statement not covered">                    throw new PluginError('gulp-copy', 'Could not copy file &lt;' +  file.path + '&gt;: ' + error.message);</span>
                 }
 &nbsp;
                 // Update path for file so this path is used later on
-<span class="cstat-no" title="statement not covered" >                file.path = fileDestination;</span>
-<span class="cstat-no" title="statement not covered" >                cb(null, file);</span>
+<span class="cstat-no" title="statement not covered">                file.path = fileDestination;</span>
+<span class="cstat-no" title="statement not covered">                cb(null, file);</span>
             });
         }
         else {
-<span class="cstat-no" title="statement not covered" >            cb(null, file);</span>
+<span class="cstat-no" title="statement not covered">            cb(null, file);</span>
         }
     }
 }
@@ -620,21 +618,21 @@ var PluginError = require('gulp-util').PluginError;
  * Recursively creates the path
  * @param {string} destination
  */
-<span class="fstat-no" title="function not covered" >function createDestination(destination)</span>
+<span class="fstat-no" title="function not covered">function createDestination(destination)</span>
 {
-<span class="cstat-no" title="statement not covered" >    var folders = destination.split('/');</span>
-<span class="cstat-no" title="statement not covered" >    var path = [];</span>
-<span class="cstat-no" title="statement not covered" >    var l = folders.length;</span>
-<span class="cstat-no" title="statement not covered" >    var i = 0;</span>
+<span class="cstat-no" title="statement not covered">    var folders = destination.split('/');</span>
+<span class="cstat-no" title="statement not covered">    var path = [];</span>
+<span class="cstat-no" title="statement not covered">    var l = folders.length;</span>
+<span class="cstat-no" title="statement not covered">    var i = 0;</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered" >    for (i; i &lt; l; i++) {</span>
-<span class="cstat-no" title="statement not covered" >        path.push(folders[i]);</span>
+<span class="cstat-no" title="statement not covered">    for (i; i &lt; l; i++) {</span>
+<span class="cstat-no" title="statement not covered">        path.push(folders[i]);</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered" >        if (folders[i] !== '' &amp;&amp; !doesPathExist(path.join('/'))) {</span>
-<span class="cstat-no" title="statement not covered" >            try {</span>
-<span class="cstat-no" title="statement not covered" >                fs.mkdirSync(path.join('/'));</span>
+<span class="cstat-no" title="statement not covered">        if (folders[i] !== '' &amp;&amp; !doesPathExist(path.join('/'))) {</span>
+<span class="cstat-no" title="statement not covered">            try {</span>
+<span class="cstat-no" title="statement not covered">                fs.mkdirSync(path.join('/'));</span>
             } catch (error) {
-<span class="cstat-no" title="statement not covered" >                throw new PluginError('gulp-copy', 'Could not create destination &lt;' +  destination + '&gt;: ' + error.message);</span>
+<span class="cstat-no" title="statement not covered">                throw new PluginError('gulp-copy', 'Could not create destination &lt;' +  destination + '&gt;: ' + error.message);</span>
             }
         }
     }
@@ -645,18 +643,18 @@ var PluginError = require('gulp-util').PluginError;
  * @param path
  * @returns {boolean}
  */
-<span class="fstat-no" title="function not covered" >function doesPathExist (path)</span>
+<span class="fstat-no" title="function not covered">function doesPathExist (path)</span>
 {
-<span class="cstat-no" title="statement not covered" >    var pathExists = true;</span>
+<span class="cstat-no" title="statement not covered">    var pathExists = true;</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered" >    try {</span>
-<span class="cstat-no" title="statement not covered" >        fs.accessSync(path);</span>
+<span class="cstat-no" title="statement not covered">    try {</span>
+<span class="cstat-no" title="statement not covered">        fs.accessSync(path);</span>
     }
     catch (error) {
-<span class="cstat-no" title="statement not covered" >        pathExists = false;</span>
+<span class="cstat-no" title="statement not covered">        pathExists = false;</span>
     }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >    return pathExists;</span>
+<span class="cstat-no" title="statement not covered">    return pathExists;</span>
 }
 &nbsp;
 /**
@@ -665,40 +663,41 @@ var PluginError = require('gulp-util').PluginError;
  * @param {string} target
  * @param {function} copyCallback
  */
-<span class="fstat-no" title="function not covered" >function copyFile (source, target, copyCallback)</span>
+<span class="fstat-no" title="function not covered">function copyFile (source, target, copyCallback)</span>
 {
-<span class="cstat-no" title="statement not covered" >    var done = false;</span>
-<span class="cstat-no" title="statement not covered" >    var readStream = fs.createReadStream(source);</span>
-<span class="cstat-no" title="statement not covered" >    var writeStream = fs.createWriteStream(target);</span>
+<span class="cstat-no" title="statement not covered">    var done = false;</span>
+<span class="cstat-no" title="statement not covered">    var readStream = fs.createReadStream(source);</span>
+<span class="cstat-no" title="statement not covered">    var writeStream = fs.createWriteStream(target);</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered" >    readStream.on('error', copyDone);</span>
-<span class="cstat-no" title="statement not covered" >    writeStream.on('error', copyDone);</span>
+<span class="cstat-no" title="statement not covered">    readStream.on('error', copyDone);</span>
+<span class="cstat-no" title="statement not covered">    writeStream.on('error', copyDone);</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered" >    writeStream.on('close', <span class="fstat-no" title="function not covered" >function() {</span></span>
-<span class="cstat-no" title="statement not covered" >        copyDone(null);</span>
+<span class="cstat-no" title="statement not covered">    writeStream.on('close', <span class="fstat-no" title="function not covered">function() {</span></span>
+<span class="cstat-no" title="statement not covered">        copyDone(null);</span>
     });
 &nbsp;
-<span class="cstat-no" title="statement not covered" >    readStream.pipe(writeStream);</span>
+<span class="cstat-no" title="statement not covered">    readStream.pipe(writeStream);</span>
 &nbsp;
     /**
      * Finish copying. Reports error when needed
      * @param [error] optional error
      */
-<span class="fstat-no" title="function not covered" >    function copyDone (error)</span>
+<span class="fstat-no" title="function not covered">    function copyDone (error)</span>
     {
-<span class="cstat-no" title="statement not covered" >        if (!done) {</span>
-<span class="cstat-no" title="statement not covered" >            done = true;</span>
-<span class="cstat-no" title="statement not covered" >            copyCallback(error);</span>
+<span class="cstat-no" title="statement not covered">        if (!done) {</span>
+<span class="cstat-no" title="statement not covered">            done = true;</span>
+<span class="cstat-no" title="statement not covered">            copyCallback(error);</span>
         }
     }
 }
 &nbsp;
 module.exports = gulpCopy;
 &nbsp;</pre></td></tr>
-</table></pre>
+</tbody></table></pre>
 </div>
 <div class="footer">
-    <div class="meta">Generated by <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a> at Tue Apr 11 2017 15:29:29 GMT+0000 (UTC)</div>
+    <div class="meta">Generated by <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a> at Tue Apr 18 2017 18:07:43 GMT+0000 (UTC)</div>
 </div>
-</body>
-</html>
+
+
+</body></html>
