@@ -1,6 +1,6 @@
 # npmtest-gulp-copy
 
-#### test coverage for  [gulp-copy (v1.0.0)](https://github.com/klaascuvelier/gulp-copy)  [![npm package](https://img.shields.io/npm/v/npmtest-gulp-copy.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-gulp-copy) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-gulp-copy.svg)](https://travis-ci.org/npmtest/node-npmtest-gulp-copy)
+#### basic test coverage for  [gulp-copy (v1.0.0)](https://github.com/klaascuvelier/gulp-copy)  [![npm package](https://img.shields.io/npm/v/npmtest-gulp-copy.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-gulp-copy) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-gulp-copy.svg)](https://travis-ci.org/npmtest/node-npmtest-gulp-copy)
 
 #### Plugin copying files to a new destination and using that destination for other actions
 
@@ -10,7 +10,7 @@
 |--:|:--|
 | coverage : | [![istanbul-coverage](https://npmtest.github.io/node-npmtest-gulp-copy/build/coverage.badge.svg)](https://npmtest.github.io/node-npmtest-gulp-copy/build/coverage.html/index.html)|
 | test-report : | [![test-report](https://npmtest.github.io/node-npmtest-gulp-copy/build/test-report.badge.svg)](https://npmtest.github.io/node-npmtest-gulp-copy/build/test-report.html)|
-| build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-gulp-copy/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-gulp-copy/tree/gh-pages/build)|
+| test-server-github : | [![github.com test-server](https://npmtest.github.io/node-npmtest-gulp-copy/GitHub-Mark-32px.png)](https://npmtest.github.io/node-npmtest-gulp-copy/build/app/index.html) | | build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-gulp-copy/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-gulp-copy/tree/gh-pages/build)|
 
 - [https://npmtest.github.io/node-npmtest-gulp-copy/build/coverage.html/index.html](https://npmtest.github.io/node-npmtest-gulp-copy/build/coverage.html/index.html)
 
@@ -82,7 +82,8 @@
         "lint": "eslint ./lib -c ./.eslintrc",
         "test": "jasmine-node test/spec"
     },
-    "version": "1.0.0"
+    "version": "1.0.0",
+    "bin": {}
 }
 ```
 
